@@ -1,0 +1,14 @@
+{
+    // Use IntelliSense to learn about possible attributes.
+    // Hover to view descriptions of existing attributes.
+    // For more information, visit: https://go.microsoft.com/fwlink/?linkid=830387
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "type": "chrome",
+            "request": "launch",
+            "name": "Open g.html",
+            "file": "c:\\Users\\watth\\OneDrive\\เดสก์ท็อป\\CAMT-S2023-960131-6502110302\\g.html"
+        }
+    ]
+}
