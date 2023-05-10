@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+     .SetBox{
+         width: unset;
+         height: unset;
+         padding: 20px;
+
+         border: 2px dotted ;
+         border-color: black;
+     }
+     .box{
+        width: 100px;
+        height: 100px;
+        background-color: rgba(252, 164, 0, 0.6);
+        
+        
+    }
+
+    </style>
+</head>
+<body>
+    <h1>Box Model</h1>
+    <div class = "SetBox">
+        <div id = "Simple-Box-Contain"
+        style="
+        background-color: rgb(0, 4, 255);
+        padding: 25px ;">
+
+        <div id = "Simple-Box"
+        style="
+        background-color: rgb(248, 176, 42);
+        padding: 25px;
+        border: 25px solid rgb(255, 151, 33);">
+        <div style="
+        background-color: rgb(132, 133, 132);
+        padding: 25px;
+        ">Simple-Box
+        </div>
+        </div>
+        </div>
+    </div>
+    <h1>CSS Display</h1>
+    <h2>inline</h2>
+    
+    <div class="SetBox">
+        <div style="display: inline; background-color: rgb(255, 0, 0);">Inline Text 1 </div>
+        <div style="display: inline; background-color: rgb(255, 153, 0);">Inline Text 2 </div>
+        <div style="display: inline; background-color: rgb(255, 251, 0);">Inline Text 3 </div>
+        <div style="display: inline; background-color: rgb(9, 255, 1);">Inline Text 4 </div>
+        <div style="display: inline; background-color: rgb(0, 255, 149);">Inline Text 5 </div>
+    </div>
+
+    <h2>Block</h2>
+    <div class="SetBox">
+        <div style="display: block;  background-color: rgb(255, 0, 0);">Block Text 1</div>
+        <div style="display: block;  background-color: rgb(255, 153, 0);">Block Text 2</div>
+        <div style="display: block;  background-color: rgb(255, 251, 0);">Block Text 3</div>
+        <div style="display: block;  background-color: rgb(9, 255, 1);">Block Text 4</div>
+        <div style="display: block;  background-color: rgb(0, 255, 149);">Block Text 5</div>
+    </div>
+
+    <h2>Inline-Block</h2>
+    <div class="SetBox">
+        <div style="display: inline-block;">Apple</div>
+        <div style="display: inline-block;">Orange</div>
+        <div style="display: inline-block;">Mango</div>
+        <div style="display: inline-block;">Watermelon</div>
+    </div>
+
+    <h2>None</h2>
+    <div class="SetBox">
+        <div style="display: inline-block;">Apple</div>
+        <div style="display: inline-block;">Orange</div>
+        <div style="display: none;">Mango</div>
+        <div style="display: inline-block;">Watermelon</div>
+    </div>
+
+    <h2>Display : none VS visibility : Hidden </h2>
+    <div class="SetBox">
+        <div style="display: inline-block;">Apple</div>
+        <div style="display: inline-block; visibility: hidden;">Orange</div>
+        <div style="display: inline-block;">Mango</div>
+        <div style="display: inline-block;">Watermelon</div>
+    </div>
+    <h2>CSS Position</h2>
+
+    <h3>Static</h3>
+    <div class="SetBox">
+       <div class="box"></div>
+    </div>
+
+    <h3>Absolute</h3>
+    <h2>Fixed Width/Height</h2>
+    <div class="SetBox">
+        <div class="box" style="position: absolute;"></div>
+    </div>
+    <br><br><br><br>
+
+    <h2>No  Width/Height</h2>
+    <div class="SetBox">
+        <div class="box"
+         style="
+         position: absolute;
+         width: 100%;
+         height: 0.5%;
+         "></div>
+    </div>
+
+    <h2>Fixed Width/Height + Right/Top</h2>
+    <div class="SetBox">
+        <div style="
+            position: relative;
+            border: 2px solid #1900ff;
+            width: 100%;
+            height: 100px;
+            background-color: rgb(255, 145, 0);
+            
+            ">
+            <div style="
+            border-radius: 50%;
+            width: 20px;
+            height: 20px;
+            background-color: rgb(194, 52, 52);
+            color: #ffff;
+            position: absolute;
+            right: -12px;
+            top: -12px;
+            text-align: center;
+            "
+            >x</div>
+
+    <h2>backdrop + banner</h2>
+            <div style="
+                position: fixed;
+                left: 0;
+                right: 0;
+                bottom: 0;
+                top: 0;
+                background-color: rgba(0, 0, 0, 0.267);
+                ">
+                <div style="
+                  background-color: rgba(211, 211, 218, 0.862);
+                  color: rgb(255, 136, 0);
+                  font-size: 32px;
+                  text-align: center;
+                  width: 300px;
+                  margin: 0 auto;
+                  margin-top: 200px;
+                  
+                  transform: translateY(50%);
+                ">
+                WEBSITE
+                </div>
+            </div>
+        </div>
+    </div>
+
+</body>
+</html>

@@ -1,0 +1,310 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Layout Playground</title>
+  <style>
+    .playground {
+      padding: 0;
+      margin: 0;
+      border: 1px solid #666;
+      width: 100%;
+      background-color: #EEEEEE;
+      min-height: 300px;
+      position: relative;
+    }
+    .playground > body {
+      margin: 0;
+      padding: 0;
+    }
+  </style>
+</head>
+<body>
+  
+  <h1>Layout with Flexbox</h1>
+  <p>create css classes for building layout/UI</p>
+  <p style="font-weight: bold;">DO NOT CHANGE A HTML STRUCTURE</p>
+  
+  <h2>Vertical Menu</h2>
+  <h3>example</h3>
+  <img src="./images/layouts/vertical-menu.png">
+  <br>
+  <h3>playground</h3>
+  <div class="playground">
+    <style>
+    .menu-container{
+      display: flex;
+      flex-direction: column;
+      width: 121px;
+      background-color: rgb(131, 131, 131);
+    
+    }
+    .menu-item{
+      text-align:center;
+      width: 100px;
+      padding: 10px;
+      border: 1px solid black;
+      color: rgb(0, 0, 0);
+    }
+    </style>
+
+    <div class="menu-container">
+      <div class="menu-item">First Menu</div>
+      <div class="menu-item">Menu 2</div>
+      <div class="menu-item">Menu 3</div>
+      <div class="menu-item">Menu 4</div>
+      <div class="menu-item">Menu 5</div>
+      <div class="menu-item">Last Menu</div>
+    </div>
+  </div>
+
+  <h2>Header</h2>
+  <h3>example</h3>
+  <img src="./images/layouts/header.png">
+  <br>
+  <h3>playground</h3>
+  <div class="playground">
+    <style>
+  .header-container{
+    padding: 10px;
+    display: flex;
+    text-align:center;
+    width: auto;
+    background-color: rgb(131, 131, 131);
+    justify-content: space-between;
+    border: 1px solid black;
+    }
+    img{
+      width: 30px;
+      height: 30px;
+    }
+
+
+    </style>
+
+    <div class="header-container">
+      <div class="header-content-left"><img src="out.svg" alt=""></div>
+      <div class="header-content">Header</div>
+      <div class="header-content-right"><img src="add.svg" alt=""></div>
+    </div>
+  </div>
+
+  <h2>Navigation Tab</h2>
+  <h3>example</h3>
+  <img src="./images/layouts/navigation-tab.png">
+  <br>
+  <h3>playground</h3>
+  <div class="playground">
+    <style>
+      .navigation-container{
+    padding: 10px;
+    display: flex;
+    text-align:center;
+    width: auto;
+    background-color: rgb(131, 131, 131);
+    justify-content: space-between;
+    border: 1px solid black;
+    }
+    img{
+      width: 30px;
+      height: 30px;
+    }
+
+
+    </style>
+
+    <div class="navigation-container">
+      <div class="navigation-item">
+        <div class="navigation-item-icon"><img src="clock.svg" alt=""></div>
+        <div class="navigation-item-label">
+          First Menu
+        </div>
+      </div>
+      <div class="navigation-item">
+        <div class="navigation-item-icon"><img src="user.svg" alt=""></div>
+        <div class="navigation-item-label">
+          Second Menu
+        </div>
+      </div>
+      <div class="navigation-item">
+        <div class="navigation-item-icon"><img src="edit.svg" alt=""></div>
+        <div class="navigation-item-label">
+          Third Menu
+        </div>
+      </div>
+      <div class="navigation-item">
+        <div class="navigation-item-icon"><img src="alert.svg" alt=""></div>
+        <div class="navigation-item-label">
+          Fourth Menu
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <h2>Card</h2>
+  <h3>example</h3>
+  <img src="./images/layouts/card.png">
+  <br>
+  <h3>playground</h3>
+  <div class="playground">
+    <style>
+.card-list-container{
+  display: flex;
+  display: inline-flex;
+  width: 250px;
+  background-color: rgb(255, 255, 255);
+  padding: 5px;
+
+}
+.card-list-container img{
+  height: 300px;
+  width: 250px;
+}
+.product-name{
+  font-weight: bold;
+}
+.product-description{
+  color: #666;
+}
+.product-price{
+  font-weight: bold;
+  text-align: right;
+}
+    </style>
+
+  
+
+    <div>
+      <div class="card-list-container">
+        <div class="card-container">
+          <div class="card-content">
+            <div class="card-content-image-section">
+              <img src="dog.jpg">
+            </div>
+            <div class="card-content-detail-section">
+              <div class="product-name">
+                Elite Obsidian
+              </div>
+              <div class="product-description">
+                Awesome product from Mars made by hand of Ultraman
+              </div>
+              <div class="product-price">
+                1,000
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="card-list-container">
+        <div class="card-container">
+          <div class="card-content">
+            <div class="card-content-image-section">
+              <img src="dog.jpg">
+            </div>
+            <div class="card-content-detail-section">
+              <div class="product-name">
+                Elite Obsidian
+              </div>
+              <div class="product-description">
+                Awesome product from Mars made by hand of Ultraman
+              </div>
+              <div class="product-price">
+                1,000
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="card-list-container">
+        <div class="card-container">
+          <div class="card-content">
+            <div class="card-content-image-section">
+              <img src="dog.jpg">
+            </div>
+            <div class="card-content-detail-section">
+              <div class="product-name">
+                Elite Obsidian
+              </div>
+              <div class="product-description">
+                Awesome product from Mars made by hand of Ultraman
+              </div>
+              <div class="product-price">
+                1,000
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <h2>Sidebar</h2>
+  <h3>example</h3>
+  <img src="./images/layouts/sidebar.png">
+  <br>
+  <h3>playground</h3>
+  <div class="playground">
+    <style>
+  .sidebar-container{
+    border: 2px solid;
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+  position: absolute;
+  width: 250px;
+  background-color: rgb(255, 255, 255);
+  }
+  .sidebar-profile-section{
+    padding: 10px;
+    display: flex;
+    border: 1px solid black;
+    font-weight: bold;
+    font-size: 20px;
+    
+  }
+  .sidebar-menu-section{
+    flex-grow: 1;
+  }
+  .sidebar-menu-item{
+    
+    padding: 10px;
+    display: flex;
+    background-color: rgb(255, 255, 255);
+    border-left:1px solid;
+    border-right:1px solid;
+    
+    
+  }
+  .sidebar-footer-section{
+    
+    
+    display: flex;
+    width: auto;
+    background-color: rgb(255, 255, 255);
+    border:1px solid;
+    
+  }
+  
+    </style>
+
+    <div class="sidebar-container">
+      <div class="sidebar-profile-section">
+        <div>I'm Header</div>
+      </div>
+      <div class="sidebar-menu-section">
+        <div class="sidebar-menu-item"> Menu 1</div>
+        <div class="sidebar-menu-item"> Menu 2</div>
+        <div class="sidebar-menu-item"> Menu 3</div>
+      </div>
+      <div class="sidebar-footer-section">
+        <div>
+           Logout
+        </div>
+      </div>
+    </div>
+  </div>
+  <br>
+</body>
+</html>
