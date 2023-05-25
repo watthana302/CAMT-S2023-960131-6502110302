@@ -1,0 +1,177 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  .top{
+    width: 100%;
+    height: 60px;
+    display: flex;
+    background-color: #1D267D;
+    top: 0px;
+    position: fixed;
+    
+  }
+  
+  body {
+    background: linear-gradient(#0C134F, #5C469C); /* Standard syntax */
+  }
+  
+  button {
+    padding: 5px;
+    margin: 20px;
+    color: #fff;
+  }
+  
+  .cell {
+    min-width: 33.3%;
+    min-height: 33.3%;
+    background-color: #D4ADFC;
+    border: 1px solid #0C134F;
+    display: flex;
+    flex-wrap: wrap;
+  }
+  
+  .blue {
+    background-color: #00f;
+  }
+  
+  .draw-overlay {
+    background-color: green;
+  }
+  
+  .gray-overlay {
+    background-color: rgba(0,0,0,0.2);
+  }
+  
+  .box {
+    width: 150px;
+    height: 150px;
+    display: flex;
+    flex-wrap: wrap;
+    border: 2px solid black;
+    position: relative;
+  }
+  
+  .blue {
+    background-color: rgb(43, 43, 212);
+  }
+  
+  .blue-overlay {
+    background-color: rgb(43, 43, 212);
+  }
+  
+  .btn-info {
+    background-color: purple;
+  }
+  
+  .info {
+    border-radius: 15px;
+    margin-right: 25px ;
+    width: 470px;
+    height: 470px;
+    display: none;
+    background-color: #dbc4f3;
+    padding: 10px;
+  }
+  
+  .info p {
+    padding: 5px 0;
+  }
+  
+  .info.active {
+    display: block;
+  }
+  
+  .info-close {
+    background-color: purple;
+    margin-left: 37%;
+  }
+  
+  .overlay {
+    margin-top: 1px;
+    min-width: 145px;
+    min-height: 145px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: none;
+  }
+  
+  .game-overlay {
+    width: 450px;
+    height: 450px;
+    position: absolute;
+    top: 10;
+    left: 10;
+    z-index: 10;
+    display: none;
+  }
+  
+  .player1 {
+    background-color: rgb(43, 43, 212);
+  }
+  
+  .player2 {
+    background-color: rgb(209, 63, 63);
+  }
+  
+  .red {
+    background-color: rgb(209, 63, 63);
+  }
+  
+  .red-overlay {
+    
+    background-color: rgb(209, 63, 63);
+  }
+  
+  #container {
+    width: 70%;
+    margin: 100px auto;
+    display: flex;
+      justify-content: space-around;
+  }
+  
+  #container.active {
+    width: 90%;
+  }
+  
+  #game {
+    border-radius: 15px;
+    min-width: 470px;
+    min-height: 470px;
+    padding: 10px;
+    background-color:#dbc4f3;
+    display: flex;
+    flex-wrap: wrap;
+    position: relative;
+  }
+  
+  #options {
+    display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+  }
+  
+  #winner {
+    padding: 25px;
+    text-align-last: center;
+    min-width: 450px;
+    min-height: 100px;
+    display: none;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: rgba(255, 255, 255, 0.7);
+    z-index: 11;
+  }
+  h2{
+    text-align: center;
+    
+  }
+  .timer{
+    font-size: 40px;
+    color: #fff;
+  }
